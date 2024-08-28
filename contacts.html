@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+</head>
+<body class="font-domine">
+
+
+    <header class="sticky top-0 z-20  bg-purple-100 text-purple-800 w-full h-12 md:h-auto dark:bg-slate-800 shadow-md dark:shadow-zinc-700">
+        <div class="flex flex-row justify-between md:items-end px-5 md:px-100 py-2">
+            <div class="md:hidden">
+                
+                <ion-icon name="menu-outline"></ion-con>
+            </div>
+            <div class="relative" >
+                <a href="index.html">
+                    <div class="absolute top-0 z-10 h-16 w-16 md:h-24 md:w-24 rounded-full outline-4 outline-dotted outline-purple-700 dark:outline-white animate-rotating duration-500 ease-out hover:animate-none cursor-pointer">
+                    </div>
+                    <img src="./src/images/logo.png" class="h-16 w-24 md:h-24 md:24 z-20" alt="logo" srcset="">
+                </a>
+            </div>
+            <div class="flex items-start md:items-center">
+                <div class="hidden md:grid grid-cols-6 gap-x-10 grow items-stretch place-content-center justify-items-center px-5 max-w-7xl dark:text-white ">
+                    <a href="index.html">
+                        <div class="border-b-4 border-purple-400">
+                            Home
+                        </div>
+                    </a>
+                    <a href="menu.html">
+                        <div>
+                            Menus
+                        </div>
+                    </a>
+                    <a href="gallery.html">
+                        <div>
+                            Gallery
+                        </div>
+                    </a>
+                    <a href="blogs.html">
+                        <div>
+                            Blogs
+                        </div>
+                    </a>
+                    <a href="faqs.html">
+                        <div>
+                            Faq
+                        </div>
+                    </a>
+                    <a href="contacts.html">
+                        <div>
+                            Contacts
+                        </div>
+                    </a>
+
+                </div>
+                <div class="w-5 h-5">
+                    <div id="light" class=" cursor-pointer place-self-center dark:text-white" title="Normal Mode" onclick="changeTheme('light')">
+                        <ion-icon name="sunny-outline"></ion-icon>
+                    </div>
+                    <div id="dark" class="hidden cursor-pointer place-self-center" title="Dark mode" onclick="changeTheme('dark')">
+                        <ion-icon name="moon"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </header>
+
+
+    <div class="py-5 dark:bg-gray-900">
+        <div class="container flex flex-col items-center justify-center w-full p-6 mx-auto text-center xl:px-0">
+            <div class="text-sm font-bold tracking-wider text-indigo-600 uppercase">Testimonials</div>
+            <h2 class="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">Here's what our customers said</h2>
+            <p class="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">Testimonials is a great way to increase brand trust and awareness. Use this section to highlight your popular customers.</p>
+        </div>
+        <div class="container p-6 mx-auto mb-10 xl:px-0">
+            <div class="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+                <div class="lg:col-span-2 xl:col-auto">
+                    <div class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+                        <p class="text-2xl leading-normal dark:text-gray-300">Share a <mark class="mx-1 text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">testimonial</mark> that hits some of your benefits from one of your popular customers.</p>
+                        <div class="flex items-center mt-8 space-x-3">
+                            <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+                                <img alt="Avatar" src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?crop=faces&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjIwMTQ5ODEx&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=100&amp;h=100" loading="lazy" />
+                            </div>
+                            <div>
+                                <div class="text-lg font-medium text-gray-200">Sarah Steiner</div>
+                                <div class="text-gray-600 dark:text-gray-400">VP Sales at Google</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+                        <p class="text-2xl leading-normal dark:text-gray-300">Make sure you only pick the <mark class="mx-1 text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">right sentence</mark> to keep it short and simple.</p>
+                        <div class="flex items-center mt-8 space-x-3">
+                            <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+                                <img alt="Avatar" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;crop=faces&amp;fit=crop&amp;w=100&amp;h=100&amp;q=80" loading="lazy" />
+                            </div>
+                            <div>
+                                <div class="text-lg font-medium text-gray-200">Dylan Ambrose</div>
+                                <div class="text-gray-600 dark:text-gray-400">Lead marketer at Netflix </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+                        <p class="text-2xl leading-normal dark:text-gray-300">This is an <mark class="mx-1 text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">awesome</mark> landing page template I've seen. I would use this for anything.</p>
+                        <div class="flex items-center mt-8 space-x-3">
+                            <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+                                <img alt="Avatar" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=100&amp;h=100&amp;crop=faces&amp;q=80" loading="lazy" />
+                            </div>
+                            <div>
+                                <div class="text-lg font-medium text-gray-200">Gabrielle Winn</div>
+                                <div class="text-gray-600 dark:text-gray-400">Co-founder of Acme Inc</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+   <script>
+        let lightIcon = document.getElementById('light')
+        let darkIcon = document.getElementById('dark')
+        changeTheme(localStorage.theme)
+        function changeTheme(theme){
+            if(theme === "light"){
+                document.documentElement.classList.remove('dark')
+                lightIcon.classList.add('hidden')
+                darkIcon.classList.remove('hidden')
+            }else if(theme === 'dark'){
+                document.documentElement.classList.add('dark')
+                lightIcon.classList.remove('hidden')
+                darkIcon.classList.add('hidden')
+            }
+            localStorage.setItem('theme', theme)
+        }
+   </script>
+
+</body>
+</html>
